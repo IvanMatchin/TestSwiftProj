@@ -15,18 +15,45 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWC-MW-8Nt">
+                                <rect key="frame" x="112" y="147" width="190" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="p7z-FH-bij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqL-JJ-2Oy">
+                                <rect key="frame" x="112" y="704" width="203" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="veL-7l-plL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="nWC-MW-8Nt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="7fA-Jv-IDM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PqL-JJ-2Oy" secondAttribute="trailing" constant="99" id="C8j-UG-DBv"/>
+                            <constraint firstItem="PqL-JJ-2Oy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="VH2-PS-xD2"/>
+                            <constraint firstItem="nWC-MW-8Nt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ddf-EY-Vl9"/>
+                            <constraint firstItem="PqL-JJ-2Oy" firstAttribute="leading" secondItem="nWC-MW-8Nt" secondAttribute="leading" id="hUD-Sb-m4b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PqL-JJ-2Oy" secondAttribute="bottom" constant="87" id="mwk-Cq-drD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-323" y="2"/>
+            <point key="canvasLocation" x="-304.34782608695656" y="18.75"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
